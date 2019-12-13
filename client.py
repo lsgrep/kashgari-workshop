@@ -24,3 +24,4 @@ label_index = np.array(preds).argmax(-1)
 
 # 把预测结果转换成具体的标签
 labels = processor.reverse_numerize_label_sequences(label_index)
+print(dict(zip(random_stuff, label_index)))
