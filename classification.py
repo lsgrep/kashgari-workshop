@@ -4,7 +4,10 @@ import kashgari
 from kashgari.embeddings import BERTEmbedding
 from kashgari.tasks.classification import BiLSTM_Model
 
+# enable
 kashgari.config.use_cudnn_cell = True
+
+# BERt model path
 BERT_PATH = 'chinese_L-12_H-768_A-12'
 
 # 初始化 Embeddings
